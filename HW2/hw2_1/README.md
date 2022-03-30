@@ -1,6 +1,14 @@
-# HW1
-We have seven juypter notebooks each corresponding to the homework parts. The file name formats corresponds to Part1.1 is part 1's 1st question.
-You would require conda to run the notebook, included in the repo is the environment.yml file. To recreate the enviornment run the command 
+# HW2
+This is the second homework for the CPSC8200 Deep Learning class. Here we train the Seq2Seq model. 
+To run the python script following packages needs to be installed :
+
+1.PyTorch
+2.Numpy
+3.TQDM
+
+In the repo, you will find index2word.pickle, word2index.pickle and s2vt, please keep these files in the same directory as the 
+script for loading the vocab and model state. The model is provided as s2vt.
+To Run the script.
 ```
-conda env create --name DL --file=environment.yml
+python ./modelseq2seq.py ./data_directory/ output_file_name.txt
 ```
